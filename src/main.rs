@@ -1,5 +1,6 @@
 use std::io;
 
+mod data_type;
 mod guess_number;
 
 fn main() {
@@ -9,6 +10,7 @@ fn main() {
         println!();
         println!("请选择要执行的程序:");
         println!("1. 猜数字");
+        println!("2. 数据类型");
         println!();
 
         let mut number = String::new();
@@ -21,6 +23,7 @@ fn main() {
 
         match number.trim() {
             "1" => guess_number::guess_number(),
+            "2" => data_type::main(),
             _ => println!("没有该程序"),
         }
     }
