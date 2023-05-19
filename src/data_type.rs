@@ -4,6 +4,7 @@ pub fn main() {
 
     // subtraction
     let difference = 95.5 - 4.3;
+    // let difference = 95.5 - 4.5; // 91
 
     // multiplication
     let product = 4 * 30;
